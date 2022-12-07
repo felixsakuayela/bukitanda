@@ -1,0 +1,527 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-10-13 03:05-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: .\templates\accounts\account_verification_email.html:4
+#: .\templates\accounts\reset_password_email.html:4
+msgid "Hi"
+msgstr "Olá"
+
+#: .\templates\accounts\account_verification_email.html:6
+msgid "Please click on below link to confirm your registration."
+msgstr "Por Favor, Clique No Link Abaixo Para Confirmar o Seu Cadastro"
+
+#: .\templates\accounts\account_verification_email.html:9
+#: .\templates\accounts\reset_password_email.html:9
+msgid "If you think it's not you, please ignore this email."
+msgstr "Se você Acha Que Não Foi Você, Por Favor, Ignore Este Email"
+
+#: .\templates\accounts\change_password.html:16
+msgid "Change Your Password"
+msgstr "Mudar Senha"
+
+#: .\templates\accounts\change_password.html:26
+#: .\templates\accounts\change_password.html:27
+msgid "Current Password"
+msgstr "Senha Atual"
+
+#: .\templates\accounts\change_password.html:30
+msgid "Create new password"
+msgstr "Criar Nova Senha"
+
+#: .\templates\accounts\change_password.html:31
+msgid "Create New Password"
+msgstr "Criar Nova Senha"
+
+#: .\templates\accounts\change_password.html:34
+msgid "Confirm new password"
+msgstr "Confirmar Nova Senha"
+
+#: .\templates\accounts\change_password.html:35
+msgid "Confirm New Password"
+msgstr "Confirmar Nova Senha"
+
+#: .\templates\accounts\dashboard.html:16
+msgid "Logged in as:"
+msgstr "Conectado Como:"
+
+#: .\templates\accounts\dashboard.html:25
+msgid "Total Orders"
+msgstr "Total dos Pedido"
+
+#: .\templates\accounts\dashboard.html:27
+msgid "View Orders"
+msgstr "Ver Pedido"
+
+#: .\templates\accounts\edit_profile.html:16
+msgid "Edit your profile"
+msgstr "Editar Perfil"
+
+#: .\templates\accounts\edit_profile.html:29 .\templates\store\checkout.html:22
+msgid "First Name"
+msgstr "Primeiro Nome"
+
+#: .\templates\accounts\edit_profile.html:33 .\templates\store\checkout.html:26
+msgid "Last Name"
+msgstr "Último Nome"
+
+#: .\templates\accounts\edit_profile.html:39
+#: .\templates\accounts\register.html:37 .\templates\store\checkout.html:36
+msgid "Phone Number"
+msgstr "Número de Telefone"
+
+#: .\templates\accounts\edit_profile.html:43
+msgid "Profile Picture"
+msgstr "Foto De Perfil"
+
+#: .\templates\accounts\edit_profile.html:48 .\templates\store\checkout.html:42
+msgid "Address Line 1"
+msgstr "Endereço 1"
+
+#: .\templates\accounts\edit_profile.html:52 .\templates\store\checkout.html:46
+msgid "Address Line 2"
+msgstr "Endereço  2"
+
+#: .\templates\accounts\edit_profile.html:57 .\templates\store\checkout.html:52
+msgid "City"
+msgstr "Cidade"
+
+#: .\templates\accounts\edit_profile.html:61 .\templates\store\checkout.html:56
+msgid "State"
+msgstr "Estado"
+
+#: .\templates\accounts\edit_profile.html:65 .\templates\store\checkout.html:60
+msgid "Country"
+msgstr "País"
+
+#: .\templates\accounts\forgotPassword.html:16
+msgid "Forgot Password"
+msgstr "Esqueceu a Senha?"
+
+#: .\templates\accounts\forgotPassword.html:21
+#: .\templates\accounts\login.html:28 .\templates\accounts\register.html:33
+msgid "Email Address"
+msgstr "Endereço De Email"
+
+#: .\templates\accounts\forgotPassword.html:25
+msgid "Got password? Login"
+msgstr "Tem a Senha? Entrar"
+
+#: .\templates\accounts\forgotPassword.html:29
+msgid "Submit"
+msgstr "Enviar"
+
+#: .\templates\accounts\forgotPassword.html:35
+#: .\templates\accounts\login.html:45
+#: .\templates\accounts\resetPassword.html:33
+msgid "Don't have account?"
+msgstr "Não Tem Uma Conta?"
+
+#: .\templates\accounts\forgotPassword.html:35
+#: .\templates\accounts\login.html:45 .\templates\accounts\register.html:14
+#: .\templates\accounts\resetPassword.html:33
+msgid "Sign up"
+msgstr " Inscreva-se"
+
+#: .\templates\accounts\login.html:13
+msgid ""
+"Thank you for registering with us. We have sent you a verification email to "
+"your email address"
+msgstr ""
+"Obrigado Por Se Registrar. Nós Enviamos Um Email de Verificação Para o seu "
+"Endereço de  Seu Email.your email address"
+
+#: .\templates\accounts\login.html:15
+msgid "Already verified?"
+msgstr "Já Está Verificado?"
+
+#: .\templates\accounts\login.html:15 .\templates\accounts\login.html:39
+msgid "Login"
+msgstr "Entrar"
+
+#: .\templates\accounts\login.html:23 .\templates\includes\navbar.html:72
+msgid "Sign in"
+msgstr "Entrar"
+
+#: .\templates\accounts\login.html:31
+msgid "Password"
+msgstr " Senha"
+
+#: .\templates\accounts\login.html:35
+msgid "Forgot password?"
+msgstr "Esqueceu a Senha?"
+
+#: .\templates\accounts\my_orders.html:16
+msgid "Your order history"
+msgstr "Histórico do Pedido"
+
+#: .\templates\accounts\my_orders.html:25
+msgid "Order #"
+msgstr "Pedido #"
+
+#: .\templates\accounts\my_orders.html:26
+msgid "Billing Name"
+msgstr "Nome do Recebedor"
+
+#: .\templates\accounts\my_orders.html:27
+msgid "Phone"
+msgstr "Telefone"
+
+#: .\templates\accounts\my_orders.html:28
+msgid "Order Total"
+msgstr "Total Do Pedido"
+
+#: .\templates\accounts\my_orders.html:29
+msgid "Date"
+msgstr "Data"
+
+#: .\templates\accounts\my_orders.html:38
+#: .\templates\accounts\order_detail.html:71
+#: .\templates\accounts\order_detail.html:78
+#: .\templates\accounts\order_detail.html:82
+#: .\templates\accounts\order_detail.html:87 .\templates\home.html:38
+#: .\templates\orders\order_complete.html:81
+#: .\templates\orders\order_complete.html:88
+#: .\templates\orders\order_complete.html:92
+#: .\templates\orders\order_complete.html:97
+#: .\templates\orders\payments.html:76 .\templates\orders\payments.html:77
+#: .\templates\orders\payments.html:97 .\templates\orders\payments.html:101
+#: .\templates\orders\payments.html:105 .\templates\store\cart.html:72
+#: .\templates\store\cart.html:73 .\templates\store\cart.html:93
+#: .\templates\store\cart.html:97 .\templates\store\cart.html:101
+#: .\templates\store\checkout.html:112 .\templates\store\checkout.html:113
+#: .\templates\store\product_detail.html:49 .\templates\store\store.html:93
+#: .\templates\store\store.html:94 .\templates\store\store.html:95
+#: .\templates\store\store.html:96 .\templates\store\store.html:97
+#: .\templates\store\store.html:98 .\templates\store\store.html:99
+#: .\templates\store\store.html:105 .\templates\store\store.html:106
+#: .\templates\store\store.html:107 .\templates\store\store.html:108
+#: .\templates\store\store.html:109 .\templates\store\store.html:110
+#: .\templates\store\store.html:111 .\templates\store\store.html:146
+msgid "$"
+msgstr "R$"
+
+#: .\templates\accounts\order_detail.html:26
+msgid "Invoiced To"
+msgstr "Faturado Por"
+
+#: .\templates\accounts\order_detail.html:40
+msgid "Order"
+msgstr "Pedido"
+
+#: .\templates\accounts\order_detail.html:41
+msgid "Transaction ID"
+msgstr "Código Do Pedido"
+
+#: .\templates\accounts\order_detail.html:42
+msgid "Order Date:"
+msgstr "Data Do Pedido"
+
+#: .\templates\accounts\order_detail.html:43
+msgid "Status:"
+msgstr "Estado"
+
+#: .\templates\accounts\order_detail.html:53
+msgid "Products"
+msgstr "Produtos"
+
+#: .\templates\accounts\order_detail.html:54
+msgid "Qty"
+msgstr "Qtd"
+
+#: .\templates\accounts\order_detail.html:55
+msgid "Total"
+msgstr "Total"
+
+#: .\templates\accounts\order_detail.html:77
+msgid "Sub Total:"
+msgstr "Subtotal"
+
+#: .\templates\accounts\order_detail.html:81
+#: .\templates\orders\payments.html:100 .\templates\store\cart.html:96
+msgid "Tax:"
+msgstr "Táxi"
+
+#: .\templates\accounts\order_detail.html:86 .\templates\store\cart.html:100
+msgid "Grand Total:"
+msgstr "Total Geral"
+
+#: .\templates\accounts\order_detail.html:94
+msgid "Thank you for shopping with us!"
+msgstr "Obrigado Por Comprar Com a Gente!"
+
+#: .\templates\accounts\register.html:21
+msgid "First name"
+msgstr "Primeiro Nome"
+
+#: .\templates\accounts\register.html:25
+msgid "Last name"
+msgstr "Último Nome"
+
+#: .\templates\accounts\register.html:43
+msgid "Create password"
+msgstr "Criar Senha"
+
+#: .\templates\accounts\register.html:47
+msgid "Repeat password"
+msgstr "Repetir Senha"
+
+#: .\templates\accounts\register.html:52 .\templates\includes\navbar.html:73
+msgid "Register"
+msgstr "Registrar"
+
+#: .\templates\accounts\register.html:59
+msgid "Have an account?"
+msgstr "Já Tem Uma Conta?"
+
+#: .\templates\accounts\register.html:59
+msgid "Log In"
+msgstr "Entrar"
+
+#: .\templates\accounts\resetPassword.html:14
+msgid "Reset Password"
+msgstr "Redefinir Senha"
+
+#: .\templates\accounts\resetPassword.html:19
+msgid "Create Password"
+msgstr "Criar Senha"
+
+#: .\templates\accounts\resetPassword.html:22
+msgid "Confirm Password"
+msgstr "Confirmar Senha"
+
+#: .\templates\accounts\resetPassword.html:27
+msgid "Reset"
+msgstr "Redefinir"
+
+#: .\templates\accounts\reset_password_email.html:6
+msgid "As requested, please click below link to reset your password."
+msgstr "Conforme Solicitado Clique no Link Abaixo Para Redefinir Senha."
+
+#: .\templates\base.html:11
+msgid "iBras | One of the Biggest Online Shopping Platform"
+msgstr "iBras | É Uma das Maiores Lojas de Comércio Online"
+
+#: .\templates\home.html:26
+msgid "See all"
+msgstr "Ver Todos"
+
+#: .\templates\home.html:27
+msgid "Popular products"
+msgstr "Produtos Populares"
+
+#: .\templates\includes\alerts.html:9
+msgid "Error:"
+msgstr "Erro"
+
+#: .\templates\includes\dashboard_sidebar.html:6
+#: .\templates\includes\navbar.html:80
+msgid "Dashboard"
+msgstr "Painel"
+
+#: .\templates\includes\dashboard_sidebar.html:7
+msgid "My Orders"
+msgstr "Meus Pedidos"
+
+#: .\templates\includes\dashboard_sidebar.html:8
+msgid "Edit Profile"
+msgstr "Editar Perfil"
+
+#: .\templates\includes\dashboard_sidebar.html:9
+msgid "Change Password"
+msgstr "Mudar Senha"
+
+#: .\templates\includes\dashboard_sidebar.html:12
+msgid "Log out"
+msgstr "Sair"
+
+#: .\templates\includes\navbar.html:24 .\templates\store\checkout.html:32
+msgid "Email"
+msgstr "Email"
+
+#: .\templates\includes\navbar.html:25
+msgid "Call us"
+msgstr "Fale Com a Gente"
+
+#: .\templates\includes\navbar.html:43
+msgid "All category"
+msgstr "Todas as Categorias"
+
+#: .\templates\includes\navbar.html:45 .\templates\store\store.html:37
+msgid "All Products"
+msgstr "Todos os Produtos"
+
+#: .\templates\includes\navbar.html:52
+msgid "Store"
+msgstr "Loja"
+
+#: .\templates\includes\navbar.html:56
+msgid "Search"
+msgstr "Busca"
+
+#: .\templates\includes\navbar.html:70
+msgid "Welcome guest!"
+msgstr "Bem Vindo, Visitante"
+
+#: .\templates\includes\navbar.html:78
+msgid "Welcome "
+msgstr "Bem Vindo "
+
+#: .\templates\includes\navbar.html:81
+msgid "Logout"
+msgstr "Sair"
+
+#: .\templates\orders\payments.html:26
+msgid "Order Note:"
+msgstr "Nota do Pedido"
+
+#: .\templates\store\cart.html:13
+msgid "Your Shopping Cart is Empty"
+msgstr "Seu Carrinho de Compras Está Vazio"
+
+#: .\templates\store\cart.html:16 .\templates\store\cart.html:108
+#: .\templates\store\checkout.html:124
+msgid "Continue Shopping"
+msgstr "Continue Comprando"
+
+#: .\templates\store\cart.html:25 .\templates\store\checkout.html:81
+msgid "Product"
+msgstr "Produto"
+
+#: .\templates\store\cart.html:26 .\templates\store\checkout.html:82
+msgid "Quantity"
+msgstr "Quantidade"
+
+#: .\templates\store\cart.html:27 .\templates\store\checkout.html:83
+msgid "Price"
+msgstr "Preço"
+
+#: .\templates\store\cart.html:73 .\templates\store\checkout.html:113
+msgid "each"
+msgstr "cada"
+
+#: .\templates\store\cart.html:92
+msgid "Total price:"
+msgstr "Preço Total"
+
+#: .\templates\store\cart.html:107
+msgid "Checkout"
+msgstr "Conferir"
+
+#: .\templates\store\checkout.html:17
+msgid "Billing Address"
+msgstr "Endereço de Entrega"
+
+#: .\templates\store\checkout.html:65
+msgid "Order Note"
+msgstr "Nota do Pedido"
+
+#: .\templates\store\checkout.html:123
+msgid "Place Order"
+msgstr "Fazer Pedido"
+
+#: .\templates\store\product_detail.html:43
+#: .\templates\store\product_detail.html:148
+msgid "reviews"
+msgstr "Avaliações"
+
+#: .\templates\store\product_detail.html:60
+#: .\templates\store\product_detail.html:71
+msgid "Select"
+msgstr "Selecionar"
+
+#: .\templates\store\product_detail.html:80
+msgid "Out of Stock"
+msgstr "Esgotado"
+
+#: .\templates\store\product_detail.html:82
+msgid "Add to Cart"
+msgstr "Adicionar ao Carrinho"
+
+#: .\templates\store\product_detail.html:100
+msgid "Write Your Review"
+msgstr "Faça a Sua Avaliação"
+
+#: .\templates\store\product_detail.html:104
+msgid "How do you rate this product?"
+msgstr "Como Você Avalia Este Produto"
+
+#: .\templates\store\product_detail.html:119
+msgid "Review Title:"
+msgstr "Título da Revisão"
+
+#: .\templates\store\product_detail.html:122
+msgid "Review:"
+msgstr "Avaliar"
+
+#: .\templates\store\product_detail.html:129
+msgid "You must purchase this product to post a review."
+msgstr "Você Precisa Comprar Este Produto Para Postar Uma Avaliação"
+
+#: .\templates\store\product_detail.html:132
+msgid "You must be logged in to post a review."
+msgstr "Você Precisa Estar Conectado Para Postar Um Comentário"
+
+#: .\templates\store\product_detail.html:140
+msgid "Customer Reviews"
+msgstr "Avaliação do Cliente"
+
+#: .\templates\store\store.html:9
+msgid "Search Result"
+msgstr "Procurar Resultado"
+
+#: .\templates\store\store.html:11
+msgid "Our Store"
+msgstr "Nossa Loja"
+
+#: .\templates\store\store.html:30
+msgid "Categories"
+msgstr "Categorias"
+
+#: .\templates\store\store.html:50
+msgid "Sizes"
+msgstr "Tamanhos"
+
+#: .\templates\store\store.html:82
+msgid "Price range"
+msgstr "Faixa de Preço"
+
+#: .\templates\store\store.html:115
+msgid "Apply"
+msgstr "Aplicar"
+
+#: .\templates\store\store.html:127
+msgid "items found"
+msgstr "Itens Encontrados"
+
+#: .\templates\store\store.html:149
+msgid "View Details"
+msgstr "Ver Detalhes"
+
+#: .\templates\store\store.html:156
+msgid "No result found. Please try again."
+msgstr "Nenhum Resultado Encontrado. Por Favor, Tente Novamente"
+
+#: .\templates\store\store.html:166 .\templates\store\store.html:168
+msgid "Previous"
+msgstr "Anterior"
+
+#: .\templates\store\store.html:180 .\templates\store\store.html:182
+msgid "Next"
+msgstr "Próximo"

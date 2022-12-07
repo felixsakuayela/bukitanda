@@ -1,0 +1,72 @@
+{% extends 'base.html' %}
+{% load i18n %}
+{% load i18n %}
+
+{% block content %}
+
+<section class="section-content padding-y">
+<!-- ============================ COMPONENT REGISTER   ================================= -->
+	<div class="card mx-auto" style="max-width:520px; margin-top:40px;">
+      <article class="card-body">
+    {% include 'includes/alerts.html' %}
+		<header class="mb-4"><h4 class="card-title">{% trans "Product Register" %}</h4></header>
+		<form action="{% url 'product' %}" method="POST" enctype="multipart/form-data">
+    	{% csrf_token %}
+				<div class="form-row">
+					<div class="form-group col-md-6">
+					  <label>{% trans "Name" %}</label>
+					  {{form.product_name}}
+					</div> <!-- form-group end.// -->
+					<div class="form-group col-md-6">
+					  <label>{% trans "Slug" %}</label>
+					  {{form.slug}}
+					</div> <!-- form-group end.// -->
+				</div> <!-- form-row.// -->
+				<div class="form-row">
+					<div class="form-group col-md-6">
+						<label>{% trans "Description" %}</label>
+					    {{ form.description }}
+					</div> <!-- form-group end.// -->
+                </div>
+				<div class="form-row">
+					<div class="form-group col-md-6">
+						<label>{% trans "Price" %}</label>
+					    {{ form.price }}
+					</div> <!-- form-group end.// -->
+					<div class="form-group col-md-6">
+						<label>{% trans "Images" %}</label>
+					    {{ form.images }}
+					</div> <!-- form-group end.// -->
+                </div>
+				<div class="form-row">
+					<div class="form-group col-md-6">
+						<label>{% trans "Stock" %}</label>
+					    {{ form.stock }}
+					</div> <!-- form-group end.// -->
+                </div>
+				<div class="form-row">
+					<div class="form-group col-md-6">
+						<label>{% trans "Is Available" %}</label>
+					    {{ form.is_available }}
+					</div> <!-- form-group end.// -->
+					<div class="form-group col-md-6">
+						<label>{% trans "Category" %}</label>
+					    {{ form.category }}
+					</div> <!-- form-group end.// -->
+                </div>
+				<div class="form-row">
+                </div>
+				<div class="form-group">
+			        <button type="submit" class="btn btn-primary btn-block"> {% trans "Register" %} </button>
+			    </div> <!-- form-group// -->
+    	{{ form.email.errors }}
+    	{{ form.non_field_errors }}
+			</form>
+		</article><!-- card-body.// -->
+    </div> <!-- card .// -->
+    <!-- <p class="text-center mt-4">{% trans "Have an account?" %} <a href="{% url 'login' %}">{% trans "Log In" %}</a></p>  -->
+    <br><br>
+<!-- ============================ COMPONENT REGISTER  END.// ================================= -->
+</section>
+
+{% endblock %}
