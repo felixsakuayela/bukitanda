@@ -1,10 +1,11 @@
+{% load i18n %}
 {% autoescape off %}
 
-Hi {{user.first_name}},
+{% trans "Hi" %} {{user.first_name}},
 
-Please click on below link to confirm your registration.
+{% trans "Please click on below link to confirm your registration." %}
 http://{{domain}}{% url 'activate' uidb64=uid token=token %}
 
-If you think it's not you, please ignore this email.
+{% trans "If you think it's not you, please ignore this email." %}
 
 {% endautoescape %}

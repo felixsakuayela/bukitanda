@@ -2,6 +2,7 @@
 
 {% extends 'base.html' %}
 {% load static %}
+{% load i18n %}
 
 {% block content %}
 
@@ -24,8 +25,8 @@
 <div class="container">
 
 <header class="section-heading">
-	<a href="{% url 'store' %}" class="btn btn-outline-primary float-right">See all</a>
-	<h3 class="section-title">Popular products</h3>
+	<a href="{% url 'store' %}" class="btn btn-outline-primary float-right">{% trans "See all" %}</a>
+	<h3 class="section-title">{% trans "Popular products" %}</h3>
 </header><!-- sect-heading -->
 
 

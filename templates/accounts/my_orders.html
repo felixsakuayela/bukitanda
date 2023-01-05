@@ -1,4 +1,5 @@
 {% extends 'base.html' %}
+{% load i18n %}
 
 
 {% block content %}
@@ -12,7 +13,7 @@
 	<main class="col-md-9">
 		<article class="card">
 		<header class="card-header">
-			<strong class="d-inline-block mr-3">Your order history</strong>
+			<strong class="d-inline-block mr-3">{% trans "Your order history" %}</strong>
 
 		</header>
 		<div class="card-body">
@@ -21,21 +22,21 @@
 				<table class="table table-hover">
 				  <thead>
 				    <tr>
-				      <th scope="col">Order #</th>
-				      <th scope="col">Billing Name</th>
-				      <th scope="col">Phone</th>
-				      <th scope="col">Order Total</th>
-							<th scope="col">Date</th>
+				    	<th scope="col">{% trans "Order #" %}</th>
+				    	<th scope="col">{% trans "Billing Name" %}</th>
+				    	<th scope="col">{% trans "Phone" %}</th>
+				    	<th scope="col">{% trans "Order Total" %}</th>
+						<th scope="col">{% trans "Date" %}</th>
 				    </tr>
 				  </thead>
 				  <tbody>
 						{% for order in orders %}
 				    <tr>
 				      <th scope="row"><a href="{% url 'order_detail' order.order_number %}">{{order.order_number}}</a></th>
-				      <td>{{order.full_name}}</td>
-				      <td>{{order.phone}}</td>
-				      <td>${{order.order_total}}</td>
-							<td>{{order.created_at}}</td>
+				    	<td>{{order.full_name}}</td>
+				    	<td>{{order.phone}}</td>
+				    	<td>{% trans "$" %}{{order.order_total}}</td>
+						<td>{{order.created_at}}</td>
 				    </tr>
 				{% endfor %}
 

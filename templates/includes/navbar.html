@@ -1,4 +1,5 @@
 {% load static %}
+{% load i18n %}
 
 <header class="section-header">
 <nav class="navbar p-md-0 navbar-expand-sm navbar-light border-bottom">
@@ -22,7 +23,7 @@
     </ul>
     <ul class="navbar-nav">
     <li><a href="#" class="nav-link"> <i class="fa fa-envelope"></i> Email </a></li>
-    <li><a href="#" class="nav-link"> <i class="fa fa-phone"></i> Call us </a></li>
+    <li><a href="#" class="nav-link"> <i class="fa fa-phone"></i> {% trans "Call us" %} </a></li>
   </ul> <!-- list-inline //  -->
   </div> <!-- navbar-collapse .// -->
 </div> <!-- container //  -->
@@ -39,21 +40,21 @@
   <div class="col-lg col-sm col-md col-6 flex-grow-0">
     <div class="category-wrap dropdown d-inline-block float-right">
       <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
-        <i class="fa fa-bars"></i> All category
+        <i class="fa fa-bars"></i> {% trans "All category" %}
       </button>
       <div class="dropdown-menu">
-        <a class="dropdown-item" href="{% url 'store' %}">All Products </a>
+        <a class="dropdown-item" href="{% url 'store' %}">{% trans "All Products" %} </a>
         {% for category in links %}
           <a class="dropdown-item" href="{{ category.get_url }}">{{ category.category_name }} </a>
         {% endfor %}
       </div>
     </div>  <!-- category-wrap.// -->
   </div> <!-- col.// -->
-  <a href="{% url 'store' %}" class="btn btn-outline-primary">Store</a>
+  <a href="{% url 'store' %}" class="btn btn-outline-primary">{% trans "Store" %}</a>
   <div class="col-lg  col-md-6 col-sm-12 col">
     <form action="{% url 'search' %}" class="search" method='GET'>
       <div class="input-group w-100">
-          <input type="text" class="form-control" style="width:60%;" placeholder="Search" name="keyword">
+          <input type="text" class="form-control" style="width:60%;" placeholder="{% trans "Search" %}" name="keyword">
 
           <div class="input-group-append">
             <button class="btn btn-primary" type="submit">
@@ -67,18 +68,18 @@
         <div class="d-flex justify-content-end mb-3 mb-lg-0">
           {% if user.id is None %}
           <div class="widget-header">
-            <small class="title text-muted">Welcome guest!</small>
+            <small class="title text-muted">{% trans "Welcome guest!" %}</small>
             <div>
-              <a href="{% url 'login' %}">Sign in</a> <span class="dark-transp"> | </span>
-              <a href="{% url 'register' %}"> Register</a>
+              <a href="{% url 'login' %}">{% trans "Sign in" %}</a> <span class="dark-transp"> | </span>
+              <a href="{% url 'register' %}"> {% trans "Register" %}</a>
             </div>
           </div>
           {% else %}
           <div class="widget-header">
-            <small class="title text-muted">Welcome {{user.first_name}}!</small>
+            <small class="title text-muted">{% trans "Welcome" %} {{user.first_name}}!</small>
             <div>
-              <a href="{% url 'dashboard' %}">Dashboard</a> <span class="dark-transp"> | </span>
-              <a href="{% url 'logout' %}"> Logout</a>
+              <a href="{% url 'dashboard' %}">{% trans "Dashboard" %}</a> <span class="dark-transp"> | </span>
+              <a href="{% url 'logout' %}"> {% trans "Logout" %}</a>
             </div>
           </div>
           {% endif %}

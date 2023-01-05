@@ -1,9 +1,10 @@
 {% load static %}
 {% load i18n %}
+
 <header class="header">
   <div class="header-1">
 
-      <a href="{% url 'home' %}" class="logo"><i class="fas fa-utensils"></i>iBras</a>
+      <a href="{% url 'home' %}" class="logo"><i class="fas fa-utensils"></i>Bukitanda</a>
 
       <div class="icons">
           <div id="search-btn" class="fas fa-search"></div>
@@ -26,27 +27,27 @@
 
   <div class="header-2">
       <nav class="navbar">
-          <a hhref="{% url 'home' %}">iBras</a>
+          <a hhref="{% url 'home' %}">Bukitanda</a>
           <div class="col-lg col-sm col-md col-6 flex-grow-0">
             <div class="category-wrap dropdown d-inline-block float-right">
               <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
-                <i class="fa fa-bars"></i> All category
+                <i class="fa fa-bars"></i> {% trans" All category" %}
               </button>
               <div class="dropdown-menu">
-                <a class="dropdown-item" href="{% url 'store' %}">All Products </a>
+                <a class="dropdown-item" href="{% url 'store' %}">{% trans"All Products" %} </a>
                 {% for category in links %}
                   <a class="dropdown-item" href="{{ category.get_url }}">{{ category.category_name }} </a>
                 {% endfor %}
               </div>
             </div>  <!-- category-wrap.// -->
           </div> <!-- col.// -->
-          <a href="{% url 'store' %}">Store</a>
+          <a href="{% url 'store' %}">{% trans"Store" %}</a>
           {% if user.id is None %}
-          <a href="{% url 'login' %}">Sign in</a>
-          <a href="{% url 'register' %}"> Register</a>
+          <a href="{% url 'login' %}">{% trans"Sign in" %}</a>
+          <a href="{% url 'register' %}"> {% trans"Register" %}</a>
           {% else %}
-          <a href="{% url 'dashboard' %}">Dashboard</a>
-          <a href="{% url 'logout' %}"> Logout</a>
+          <a href="{% url 'dashboard' %}">{% trans"Dashboard" %}</a>
+          <a href="{% url 'logout' %}"> {% trans"Logout" %}</a>
           {% endif %}
           <a href="{% url 'cart' %}" class="widget-header pl-3 ml-3">
             <div class="icon icon-sm rounded-circle border"><i class="fa fa-shopping-cart"></i></div>
@@ -69,10 +70,10 @@
         <div class="col-lg col-sm col-md col-6 flex-grow-0">
             <div class="category-wrap dropdown d-inline-block float-right">
               <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
-                <i class="fa fa-bars"></i> All category
+                <i class="fa fa-bars"></i> {% trans"All category" %}
               </button>
               <div class="dropdown-menu">
-                <a class="dropdown-item" href="{% url 'store' %}">All Products </a>
+                <a class="dropdown-item" href="{% url 'store' %}">{% trans"All Products" %} </a>
                 {% for category in links %}
                   <a class="dropdown-item" href="{{ category.get_url }}">{{ category.category_name }} </a>
                 {% endfor %}
@@ -89,7 +90,7 @@
 
 
 <form action="{% url 'search' %}" class="search-form" method='GET'>
-    <input type="search" placeholder="Search" name="keyword" id="search-box">
+    <input type="search" placeholder="{% trans"Search" %} name="keyword" id="search-box">
     <label for="search-box" class="fas fa-search"></label>
     <i class="fas fa-times" id="close"></i>
 </form>
