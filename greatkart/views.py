@@ -8,9 +8,22 @@ def home(request):
     reviews = None
     for product in products:
         reviews = ReviewRating.objects.filter(product_id=product.id, status=True)
+    
+    html_language = translation.get_language()
 
     context = {
         'products': products,
         'reviews': reviews,
+        'html_language': html_language,
     }
     return render(request, 'home.html', context)
+
+
+def foo(request):
+    
+    html_language = translation.get_language()
+
+    context = {
+        'html_language': html_language,
+    }
+    return context
